@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- First Column -->
+        <div class="column">
+            <div class="metrics-grid">
+                <div class="metric">
+                    <div class="chart-wrapper">
+                        <canvas id="designChart"></canvas>
+                        <div class="metric-value">74%</div>
+                    </div>
+                    <div class="metric-label">Design</div>
+                </div>
+                <div class="metric">
+                    <div class="chart-wrapper">
+                        <canvas id="frontendChart"></canvas>
+                        <div class="metric-value">48%</div>
+                    </div>
+                    <div class="metric-label">Front-end</div>
+                </div>
+                <div class="metric">
+                    <div class="chart-wrapper">
+                        <canvas id="backendChart"></canvas>
+                        <div class="metric-value">62%</div>
+                    </div>
+                    <div class="metric-label">Back-end</div>
+                </div>
+                <div class="metric">
+                    <div class="chart-wrapper">
+                        <canvas id="testingChart"></canvas>
+                        <div class="metric-value">85%</div>
+                    </div>
+                    <div class="metric-label">Testing</div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="lineChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Rest of the columns remain the same -->
+        <div class="column">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">23.5h
+                        <span class="trend-indicator trend-up">↑4%</span>
+                    </div>
+                    <div class="stat-label">Design</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">38h
+                        <span class="trend-indicator trend-up">↑7%</span>
+                    </div>
+                    <div class="stat-label">Front-end</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">45.5h
+                        <span class="trend-indicator trend-up">↑2%</span>
+                    </div>
+                    <div class="stat-label">Back-end</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">107h
+                        <span class="trend-indicator trend-down">↓1%</span>
+                    </div>
+                    <div class="stat-label">Total hours</div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="progressChart"></canvas>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Team</h3>
+            <div class="team-section">
+                <div class="team-member">
+                    <img src="/api/placeholder/40/40" alt="Team member 1">
+                    <span>John Doe</span>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/40/40" alt="Team member 2">
+                    <span>Jane Smith</span>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/40/40" alt="Team member 3">
+                    <span>Mike Johnson</span>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/40/40" alt="Team member 4">
+                    <span>Sarah Wilson</span>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/40/40" alt="Team member 5">
+                    <span>Tom Brown</span>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/40/40" alt="Team member 6">
+                    <span>Lisa Anderson</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

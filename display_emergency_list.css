@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lobster", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: transparent;
+    min-height: 100vh;
+}
+
+header {
+    background-color: transparent;
+    font-family: "jockey one",sans-serif;
+    color: #fff;
+    padding: 1rem;
+}
+  
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+nav li:first-child {
+    margin-right: auto;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+  
+.emergency-container {
+    background-color: transparent;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right , rgba(133, 133, 52, 0.479) , rgb(33, 33, 16));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size: larger;
+    color:rgba(207, 206, 173, 0.758);
+    min-height: 80vh;
+}
+
+.emergency-table {
+    background-color: transparent;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    padding : 10px 20px;
+    border-radius: 20px;
+}
+
+.emergency-table th, 
+.emergency-table td {
+    border: 2px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.emergency-table th {
+    background-color: transparent;
+    font-weight: bold;
+    color:rgba(207, 206, 173, 0.758);
+}
+
+.emergency-table tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.emergency-table tr:hover {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.search-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'jockey one',sans-serif;
+}
+
+.sort-btn {
+    cursor: pointer;
+    user-select: none;
+}
+
+.sort-btn:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.video-background{
+    right: 0;
+    top:0;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+}

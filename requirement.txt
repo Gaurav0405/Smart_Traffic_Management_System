@@ -1,0 +1,5 @@
+flask
+googlemaps
+pandas
+scikit-learn
+joblib

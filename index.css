@@ -1,0 +1,129 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  display: flex;
+  flex-direction:column;
+  min-height: 100vh;
+  font-family: "Jockey one" , sans-serif;
+  background-color: hsl(222, 94%, 93%);
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #DDE7FE;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+main {
+  flex-grow: 1;
+}
+
+nav a {
+  color: #0d0101;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin:0;
+}
+
+.nav_icon {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav_right { 
+  height:1.5rem;
+  margin-left: 75rem;
+}
+
+.nav_right a {
+  flex-direction: row-reverse;
+}
+
+/* Main content styles */
+.welcome {
+  background-image: url('static/images/background.png');
+  background-size: cover;
+  background-position: center;
+  color: #0f0c0c;
+  padding: 3rem;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.explore-btn {
+  background-color: #8d91ba;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.explore-btn:hover {
+  background-color: #72b1f084;
+  color: #151010;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.feature {
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  width: 100%;
+  height: 200px;
+  object-fit: scale-down;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #3b49df;
+  margin: 1rem;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 1rem 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
